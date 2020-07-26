@@ -1,0 +1,31 @@
+{
+  "name": "codefox",
+  "version": "1.0.0",
+  "description": "Quick coding and highlighting tool using the rextester service for compiling programs written in the supported languages.",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^9.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+	"start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Motanovici/Codefox.git"
+  },
+  "keywords": [
+    "productivity",
+    "developer",
+    "devtools",
+    "quick",
+    "coding"
+  ],
+  "author": "Daniel Armasu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Motanovici/Codefox/issues"
+  },
+  "homepage": "https://github.com/Motanovici/Codefox#readme"
+}

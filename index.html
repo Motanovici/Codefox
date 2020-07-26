@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <head>
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+			<!-- I must provide a drop-down list that allows for quick language picking -->
+			<!-- Also, I must run a few tests and see what CompilerArgs are required -->
+		    var to_compile = {
+			    "LanguageChoice": "7",
+			    "Program": $("#code").val(),
+			    "Input": "",
+			    "CompilerArgs" : "-o a.out source_file.cpp"
+		    };
+			<!-- Prettify JSON? -->
+		    $.ajax ({
+			        url: "https://rextester.com/rundotnet/api",
+			        type: "POST",
+			        data: to_compile
+			    }).done(function(data) {
+			        alert(JSON.stringify(data));
+			    }).fail(function(data, err) {
+			        alert("fail " + JSON.stringify(data) + " " + JSON.stringify(err));
+		        });
+	    });
+    });
+    </script>
+    </head>
+
+
+	
+<center>
+
+<!-- To enable seeing the highlight as well as running the code, 2 separate
+windows may be useful , sending the code as text -->
+
+<textarea id="code">
+
+#include <iostream>
+using namespace std;
+		
+int main()
+{
+	int a=5;
+	cout << a << endl;
+	return 0;
+}
+
+</textarea>
+ 
+<button id="run">Run</button>
+</center>
+
+
+
+</body>
+</html>
