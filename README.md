@@ -4,6 +4,6 @@ Quick coding and highlighting tool using the rextester service for compiling pro
 
 ## Run app
 
-1. git clone https://github.com/Motanovici/Codefox
-2. npm install
-3. npm start
+1. `git clone https://github.com/Motanovici/Codefox`
+2. `npm install`
+3. `npm start`
