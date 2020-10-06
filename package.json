@@ -4,7 +4,7 @@
   "description": "Quick coding and highlighting tool using the rextester service for compiling programs written in the supported languages.",
   "main": "main.js",
   "dependencies": {
-    "electron": "^9.3.0"
+    "electron": "^9.3.1"
   },
   "devDependencies": {},
   "scripts": {
